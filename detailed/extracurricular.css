@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A1814;
+}
+
+.Activity {
+    margin-top: 100px;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.ActivityImage {
+    height: 40vw;
+    width: 40%;
+    transition: ease 1.3s;
+}
+
+.ActivityImage:hover {
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+.ActivityText {
+    color: #1A1814;;
+    width: 40%;
+    transition: .9s ease;
+}
+
+.ActivityImage:hover + .ActivityText {
+    text-align: center;
+    color: #D69F72;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5vw;
+}

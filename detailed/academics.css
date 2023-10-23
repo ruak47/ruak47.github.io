@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1A1814;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 10vmin;
+    padding: 5vh 0vw;
+    color: #DA9100;
+}
+
+/* Nav */
+
+nav {
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0px;
+    padding: 0.5vw;
+    background-color: #100f0d7f;
+    border: 3px solid #d69f727a;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5vw;
+    padding: 1vw;
+}
+
+li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+    font-style: bold;
+    font-family: 'Tangerine', cursive;
+
+    transition: ease 0.5s;
+    border: 10px solid #355E3B;
+    background-color: #355E3B;
+}
+
+li a:hover {
+    border: 10px solid white;
+    background-color: white;
+    color: #355E3B;
+}
+
+#ContactButton {
+    border: 10px solid #DA9100;
+    background-color: #DA9100;
+}
+
+#ContactButton:hover {
+    border: 10px solid white;
+    background-color: white;
+    color: #DA9100;
+}
+
+/* Schools */
+
+.School {
+    margin-bottom: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.row img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 100%;
+}
+
+.row p {
+    width: 40%;
+    color: #D69F72;
+    font-size: 1.5vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+#BeaconhousePara2 {
+    width: 50%;
+    padding-top: 100px;
+    margin: auto;
+    color: #D69F72;
+    font-size: 1.5vw;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    margin-top: 100px;
+    background-color: #100f0d;
+}
+
+#footer p {
+
+    padding: 25px 0px 25px 100px;
+
+    color: #DA9100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+#footer p span {
+    color: #355E3B;
+}
