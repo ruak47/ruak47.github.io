@@ -123,7 +123,19 @@ h1 {
 }
 
 #box12:before {
-    background-image: url();
+    background-image: url(/picsCertificates/WSStudios.jpg);
+}
+
+#box12 {
+    width: 40%;
+}
+
+#box13:before {
+    background-image: url(/picsCertificates/CaseArtistry.jpg);
+}
+
+#box13 {
+    width: 40%;
 }
 
 /* Nav */
