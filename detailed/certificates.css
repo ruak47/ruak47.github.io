@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -9,7 +8,7 @@ html {
 }
 
 body {
-    background: #1A1814;
+    background-color: #1A1814;
 }
 
 h1 {
@@ -20,46 +19,118 @@ h1 {
     color: #DA9100;
 }
 
-/* Intro */
+/* Hobbies */
 
-.IntroRow {
+.boxesContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 1vw;
 }
 
-.IntroRow img {
-    opacity: 70%;
-    border-radius: 100%;
+.box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 500px;
+    margin: 1vw;
+    transition: ease .3s ;
 }
 
-.IntroRow img:hover {
-    opacity: 100%;
+.box:hover {
+    padding: 30px 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.IntroRow p {
-    opacity: 70%;
-    width: 40%;
-    color: #D69F72;
-    font-size: 1.5vw;
-    font-family: 'Nunito', sans-serif;
+.boxText {
+    display: none;
 }
 
-.IntroRow p:hover {
-    opacity: 100%;
+.box:hover .boxText {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    color: #f7b783;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1vw;
+}
+
+.box:hover:before {
+    opacity: 1;
+}
+
+.content {
+    position: relative;
+}
+
+.box:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease;
+}
+
+#box1:before {
+    background-image: url(/picsCertificates/Basketball.jpg);
+}
+
+#box2:before {
+    background-image: url(/picsCertificates/GreenAmbassador.jpg);
+}
+
+#box3:before {
+    background-image: url(/picsCertificates/UrduEssay.jpg);
+}
+
+#box4:before {
+    background-image: url(/picsCertificates/Valencia.jpg);
+}
+
+#box5:before {
+    background-image: url(/picsCertificates/BusinessSociety.jpg);
+}
+
+#box6:before {
+    background-image: url(/picsCertificates/ArtCompetition.jpg);
+}
+
+#box7:before {
+    background-image: url(/picsCertificates/DISECdelegate.jpg);
+}
+
+#box8:before {
+    background-image: url(/picsCertificates/ScienceOlympiad.jpg);
+}
+
+#box9:before {
+    background-image: url(/picsCertificates/FutureTech.jpg);
+}
+
+#box10:before {
+    background-image: url(/picsCertificates/FloodReliefVolunteer.jpg);
+}
+
+#box11:before {
+    background-image: url(/picsCertificates/CovidVolunteer.jpg);
+}
+
+#box12:before {
+    background-image: url();
 }
 
 /* Nav */
 
 nav {
-    margin-top: 100px;
     padding: 0.5vw;
     background-color: #100f0d7f;
-    position: sticky;
-    top: 0;
     border: 3px solid #d69f727a;
 }
 
@@ -103,60 +174,6 @@ li a:hover {
 #ContactButton:hover {
     border: 10px solid white;
     background-color: white;
-    color: #DA9100;
-}
-
-/* Summaries */
-
-.summary {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    margin-left: 107px;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-
-.column p {
-    color: #D69F72;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5vw;
-}
-
-.column img {
-    width: 40vw;
-    height: 30vw;
-}
-
-.column a {
-    margin-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 30px;
-
-    border: 10px solid #DA9100;
-    background-color: #DA9100;
-    color: #1A1814;
-    text-decoration: none;
-    font-size: 3vw;
-    font-style: bold;
-    font-family: 'Tangerine', cursive;
-
-    transition: ease 0.5s;
-}
-
-.column a:hover {
-    font-size: 3.5vw;
-    background-color: #355E3B;
-    border-color: #355E3B;
     color: #DA9100;
 }
 
