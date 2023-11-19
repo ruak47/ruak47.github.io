@@ -31,8 +31,10 @@ h1 {
 }
 
 .IntroRow img {
+    width: 40%;
     opacity: 70%;
     border-radius: 100%;
+    transition: 1s ease;
 }
 
 .IntroRow img:hover {
@@ -46,6 +48,7 @@ h1 {
     color: #D69F72;
     font-size: 1.5vw;
     font-family: 'Nunito', sans-serif;
+    transition: 1s ease;
 }
 
 .IntroRow p:hover {
@@ -109,17 +112,16 @@ li a:hover {
 /* Summaries */
 
 .summary {
-    margin-top: 300px;
+    margin-top: 20vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    margin-left: 107px;
     justify-content: center;
     align-items: center;
     width: 40%;
@@ -129,6 +131,12 @@ li a:hover {
     color: #D69F72;
     font-family: 'Nunito', sans-serif;
     font-size: 1.5vw;
+    opacity: 70%;
+    transition: ease 0.5s;
+}
+
+.column p:hover {
+    opacity: 100%;
 }
 
 .column img {
@@ -160,6 +168,32 @@ li a:hover {
     color: #DA9100;
 }
 
+@media only screen and (max-width:600px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .column img {
+        width: 80vw;
+        height: 60vw;
+    }
+
+    .column a {
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .column p {
+        width: 80vw;
+        text-align: center;
+        font-size: 3.5vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+}
+
+
 /* Footer */
 
 #footer {
@@ -180,4 +214,22 @@ li a:hover {
 
 #footer p span {
     color: #355E3B;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1vw;
+    }
+
+    #footer p {
+
+        padding: 25px 20px 25px 20px;
+
+        font-size: 2.3vw;
+    }
+
 }
