@@ -55,6 +55,23 @@ h1 {
     opacity: 100%;
 }
 
+@media only screen and (max-width:800px) {
+    .IntroRow {
+        flex-direction: column;
+    }
+
+    .IntroRow img {
+        width: 70%;
+    }
+
+    .IntroRow p {
+        width: 70%;
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 4vw;
+    }
+}
+
 /* Nav */
 
 nav {
